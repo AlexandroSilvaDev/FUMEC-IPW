@@ -1,0 +1,56 @@
+.pai {
+    display: flex;
+    background-color: gray;
+    width: 100%;
+    height: 650px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* flex-flow: column nowrap; */
+    /* justify-content: center; */
+    align-items: center;
+    align-content: stretch;
+}
+.filho{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:tomato;
+    margin: 3px;
+    text-align: center;
+    /* line-height:120px; */
+    /* width: 200px; */
+    /* height: 250px;  */
+}
+.neto {
+    background-color:white;
+    margin: 5px;
+    width: 100%;
+}
+.item1 {
+    order: 1;
+    align-self: stretch;
+
+    /* flex-shrink: 2; */
+    /* flex-grow: 1; */
+    /* flex-basis: 20%; */
+}
+.item2 {
+    order: 2;
+    align-self: center;
+    /* flex-basis: 50%; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 0; */
+    /* flex: 1 0 50%; */
+    }
+.item3 {
+    order: 3;
+    align-self: center;
+    /* flex-basis: 30%; */
+    /* flex-grow: 1; */
+}
+.item4 {
+
+}
+.item5 {
+   
+}

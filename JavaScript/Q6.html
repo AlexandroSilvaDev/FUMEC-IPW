@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 6</title>
+</head>
+<body>
+    
+    <img id="bezerro" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpTi2o2GBQxiyjV7qQyUEjmR-b0XyaadNz2w&usqp=CAU" alt="bezerro">
+    <button onclick="document.getElementById('bezerro').src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTBfn1me2QwRvLyDXwEOE4eXCxjIHH2WMsXg&usqp=CAU'">Churrasco</button>
+    <p id="p1"></p>
+
+    <script>
+        var paragrafo = document.querySelector('button');
+        paragrafo.addEventListener('click', texto);
+        function texto()
+        {
+            var texto = document.getElementById('p1').innerHTML = 'Troca de imagem ok'
+        }
+    </script>
+</body>
+</html>

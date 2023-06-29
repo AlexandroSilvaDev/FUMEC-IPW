@@ -1,0 +1,44 @@
+h2 {
+    text-align: center;
+}
+article {
+    text-align: center;
+}
+.pai {
+    background-color: darkgrey;
+    height: 500px; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-start; /* justifica itens na Horizontal*/
+    align-items:flex-start; /* justifica itens na vertical*/
+    align-content:space-arounds; /* justifica itens na vertical com quebra "wrap" */
+}
+
+.filho {
+    background-color: tomato;
+    color: whitesmoke;
+    padding: 1px;
+    margin: 2px;
+    
+}
+
+.item-1{
+    background-color: black;
+    order: 1;
+    flex: 0 0 20%;
+}
+.item-2{
+    background-color:blue;
+    order: 2; 
+     flex: 0 0 46%;
+    
+}
+.item-3{
+    background-color: blueviolet;
+    order: 3; 
+    flex: 0 0 30%;
+    
+
+
+

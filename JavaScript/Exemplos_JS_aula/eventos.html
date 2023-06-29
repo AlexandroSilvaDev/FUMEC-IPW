@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>Função JavaScript</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        margin: solid 2px black;
+        text-align: center;
+        line-height: 100px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+   <! Eventos dentro do HTML-->
+    <div id="sinal" onclick="clicar()" onmousemove="mover()" onmouseout="sair()"> 
+        Eventos
+    </div>
+
+    <script>
+      function clicar(){
+        var c = window.document.getElementById("sinal")
+        c.style.backgroundColor = "red"
+        c.innerHTML = "Pare"  
+      }
+      function mover(){
+          var c = window.document.getElementById("sinal")
+          c.style.backgroundColor = "yellow"
+          c.style.color = "Black"
+          c.innerHTML = "Atenção"
+      }
+        function sair(){
+            var c = window.document.getElementById("sinal")
+            c.style.background = "green"
+            c.innerHTML = "Siga"
+        }
+    </script>
+  </body>
+</html>

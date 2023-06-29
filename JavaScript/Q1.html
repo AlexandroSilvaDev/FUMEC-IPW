@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 1</title>
+</head>
+<body>
+    
+    <div id="cabeçalho">Cabeçalho</div>
+    <p id="p1"></p>
+    <button id="botão">Botão</button>
+
+    <script>
+        var paragrafo = document.querySelector('button');
+        paragrafo.addEventListener('click', novoTexto);
+        function novoTexto()
+        {
+            var texto = document.getElementById('p1').innerHTML = 'JavaScript é legal!!';
+        }
+    </script>
+    
+</body>
+</html>

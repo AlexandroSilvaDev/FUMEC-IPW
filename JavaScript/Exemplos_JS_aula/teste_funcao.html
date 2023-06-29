@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head><metacharset="utf-8"/></head>
+    <title>Funções</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: beige;
+            color: black;
+            text-align: center;
+            font-size: 80px;
+            border-radius: 100%;
+            display:flex; 
+            align-items: center;
+            padding-left: 80px;
+            
+        }
+    </style>
+    <body>
+        <div id="sinal" onclick="clicar()" onmouseover="entrar()" onmouseout="sair()">
+        <span>Sinal</span>
+        </div>
+        <script>
+            var c = window.document.getElementById('sinal')
+            function clicar() {
+                c.style.backgroundColor = "red"
+                c.innerHTML = "PARE"
+            }
+            function entrar(){
+                var c = window.document.getElementById('sinal')
+                c.style.backgroundColor = "yellow"
+                c.innerHTML = "Atenção"
+            }
+            function sair(){
+                var c = window.document.getElementById('sinal')
+                c.style.backgroundColor = "green"
+                c.innerHTML = "SIGA"
+            }
+        </script>
+    </body>
+</html>

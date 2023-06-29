@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head><metacharset="utf-8"/>
+        <style>
+            body {
+                background-color: darkblue;
+            }
+            div {
+                display: flex;
+                height: 700px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            img { 
+                height: 350px;
+            }
+            button {
+                margin-top: 10px;
+                width: 80px; 
+                height: 30px;
+                border-radius: 20%;
+                background-color: gold;
+                box-shadow: 3px 3px 3px 3px;
+                font-size: 1em;
+                cursor: pointer;
+                
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div>
+           <img id="lampada" src="imagens/deligada_fundo.png" alt="lampada desligada">
+           <button id="liga"  type="button" onclick="ligar()">Liga</button>
+           <button id="desliga"  type="button" onclick="desligar()">Desliga</button>
+        </div>   
+            <script>
+            function ligar(){  
+                document.getElementById("lampada").src = "imagens/ligada_fundo.png";
+                document.getElementsByTagName("body")[0].style.backgroundColor = "yellow";
+            }
+            function desligar(){  
+                document.getElementById("lampada").src = "imagens/deligada_fundo.png";
+                document.getElementsByTagName("body")[0].style.backgroundColor = "darkblue";
+            }           
+            </script>
+    </body>
+</html>

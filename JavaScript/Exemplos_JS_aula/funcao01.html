@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>Função JavaScript</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        margin: solid 2px black;
+        text-align: center;
+        line-height: 100px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+   <! Eventos dentro do HTML-->
+    <div id="sinal"> 
+        Eventos
+    </div>
+
+    <script>
+        //Enventos com addEventListener dentro do Java Script
+        var c = window.document.getElementById("sinal")
+         c.addEventListener('click', clicar)
+         c.addEventListener('mousemove', mover)
+         c.addEventListener('mouseout', sair)
+      
+        function clicar(){
+        c.style.backgroundColor = "red"
+        c.innerHTML = "Pare"     
+      }
+      function mover(){
+          c.style.backgroundColor = "yellow"
+          c.style.color = "Black"
+          c.innerHTML = "Atenção"
+      }
+        function sair(){
+            c.style.background = "green"
+            c.innerHTML = "Siga"
+        }
+    </script>
+  </body>
+</html>

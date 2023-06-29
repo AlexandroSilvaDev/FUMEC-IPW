@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocimetro</title>
+    <style>
+        h1, div {
+            margin-top: 20px;   
+        }
+      
+    </style>
+</head>
+<body>
+    <h1>Teste de velocidade</h1>
+    Velocidade: <input type="number" name="txtvel" id="txtvel"> Km/h
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res">Aferir Velocidade</div>
+</body>
+
+
+
+    <script>
+        function calcular(){
+            var txtvel = document.getElementById('txtvel')
+            var res = document.querySelector('div#res') 
+            var vel = Number(txtvel.value)
+            res.innerHTML = `<p> Sua velicidade é de <strong> ${vel}Km/h </strong> <p>`
+            if (vel > 60) {
+                res.innerHTML += `<p><strong> Multado </strong> por excesso de velocidade! <p>`
+            }
+           res.innerHTML += `<p> Use cinto de segurança <p>`
+    }
+    </script>
+</html>

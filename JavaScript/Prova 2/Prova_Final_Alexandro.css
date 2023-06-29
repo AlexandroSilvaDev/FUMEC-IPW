@@ -1,0 +1,113 @@
+*
+{
+    margin: 0;
+    border: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#cabeçalho
+{
+    width: 100%;
+    height: 200px;
+    background-color: cadetblue; 
+}
+#central
+{
+    padding-top: 5%;
+    font-size: 400%;
+    text-shadow: 10px 10px 5px black;
+    color: white;
+}
+#botao
+{
+    cursor: pointer;
+    border-radius: 10px;
+}
+#seçao1
+{
+    width: 33%;
+    height: 600px;
+    background-color: bisque;
+    float: left;
+    border-radius: 10px;
+}
+#titulo1
+{
+    text-align: center;
+    color: black;
+    font-size: 200%;
+}
+#div1
+{
+    display: inline-block;
+    border-radius: 40px;
+}
+#WhatsApp
+{
+    width: 50%;
+    border-radius: 10px;
+}
+#seçao2
+{
+    width: 34%;
+    height: 600px;
+    background-color: rgb(168, 45, 0);
+    float: left;
+    border-radius: 10px;
+}
+#titulo2
+{
+    text-align: center;
+    color: black;
+    font-size: 200%;
+}
+#div2
+{
+    display: inline-block;
+    border-radius: 40px;
+}
+#Google
+{
+    width: 50%;
+    border-radius: 10px;
+}
+#seçao3
+{
+    width: 33%;
+    height: 600px;
+    background-color: rgb(48, 48, 48);
+    float: left;
+    border-radius: 10px;
+}
+#titulo3
+{
+    text-align: center;
+    color: white;
+    font-size: 200%;
+}
+#div3
+{
+    display: inline-block;
+    border-radius: 40px;
+    color: white;
+}
+#Facebook
+{
+    width: 50%;
+    border-radius: 10px;
+}
+#rodape
+{
+    width: 100%;
+    height: 150px;
+    background-color: cadetblue;
+    clear: both;
+    color: black;
+}
+@media (max-width: 800px)
+{
+    #seçao1, #seçao2, #seçao3
+    {
+        width: 100%;
+    }
+}

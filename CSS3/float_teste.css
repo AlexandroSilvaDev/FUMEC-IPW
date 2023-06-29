@@ -1,0 +1,45 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+#cabeçalho
+{
+    background-color: blue;
+    padding: 100px;
+    /*display: inline-block;*/
+}
+#menu
+{
+    background-color: blueviolet;
+    /*display: inline-block;*/
+    float: left;
+    width: 20%;
+    height: 550px;
+}
+#principal
+{
+    background-color: red;
+    /*display: inline-block;*/
+    float: left;
+    width: 60%;
+    height: 550px;
+}
+#lateral
+{
+    background-color: yellow;
+    /*display: inline-block;*/
+    float: left;
+    width: 20%;
+    height: 550px;
+}
+#rodape
+{
+    background-color: green;
+    padding: 100px;
+    /*display: inline-block;*/
+}
