@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+   <form action="/obrigado-contato" method="post">
+    <fieldset>
+        <legend>Contato</legend>
+        <label>
+            Nome:
+            <input type="text" name="nome">
+        </label>
+        <br>
+        <label>
+            Mensagem:
+            <textarea name="mensagem" rows="4" cols="20"></textarea>
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>Perguntas</legend>
+        O que você está achando deste livro até agora?
+        <br>
+        <label>
+            <input type="radio" name="qualidade" value="Ótimo" checked>
+            Ótimo
+        </label>
+        <label>
+            <input type="radio" name="qualidade" value="Bom">
+            Bom
+        </label>
+        <label>
+            <input type="radio" name="qualidade" value="Razoável">
+            Razoável
+        </label>
+        <br><br>
+        Quem além de você poderia aprender HTML e CSS?
+        <br>
+        <label>
+            <input type="checkbox" name="indicado" value="Mãe" checked>
+            Mãe
+        </label>
+        <label>
+            <input type="checkbox" name="indicado" value="Pai">
+            Pai
+        </label>
+        <label>
+            <input type="checkbox" name="indicado" value="Amigos">
+            Amigos
+        </label>
+        <br><br>
+        Como você prefere ser chamado(a)?
+        <br>
+        <select name="tratamento">
+            <option value="senhor">Senhor</option>
+            <option value="mestre">Mestre</option>
+            <option value="senhora">Senhora</option>
+            <option value="deusa" selected>Deusa</option>
+        </select>
+    </fieldset>
+    <br>
+    <input type="submit" value="Enviar formulário sem noção">
+</form>

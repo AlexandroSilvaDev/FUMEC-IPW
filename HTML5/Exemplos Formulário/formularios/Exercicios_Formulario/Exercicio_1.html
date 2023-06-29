@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+</head>
+<body>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .a
+        {
+            display: inline-block;
+            width: 90px;
+        }
+        .cpf
+        {
+            padding-right: 233px;
+        }
+        .uf
+        {
+            margin-left: 31px;
+        }
+        #uf
+        {
+            padding-right: 118px;
+        }
+        #data
+        {
+            padding-right: 34px;
+        }
+        .senha
+        {
+            margin-left: 16px;
+        }
+        .fax
+        {
+            margin-left: 26px;
+        }
+        #civil
+        {
+            padding-right: 36px;
+        }
+        .cor
+        {
+            background-color: grey;
+        }
+        .cor2
+        {
+            background-color: grey;
+        }
+        header
+        {
+            text-align: center;
+            background-color: grey;
+            padding: 20px;
+        }
+        body
+        {
+            background-color: grey;
+        }
+    </style>
+    <header>
+        <h1>Formulário de Inscrição</h1>
+    </header>
+    <body>
+        <form action="destino.html" method="post">
+            <fieldset class="cor">
+                <legend><strong>Dados Cadastrais</strong></legend>
+                <br>
+                <label for="Nome" class="a">Nome:</label>
+                <input type="text" size="53" name="nome" placeholder="Primeiro Nome" required>
+                <br><br>
+                <label for="Sobrenome" class="a">Sobrenome:</label>
+                <input type="text" size="53" name="nome completo" placeholder="Sobrenome Completo" required>
+                <br><br>
+                <label for="CPF" class="a">CPF:</label>
+                <input class="cpf" type="number" size="53" name="cpf" placeholder="CPF" required>
+                <br><br>
+                <label for="Email" class="a">Email:</label>
+                <input type="email" size="53" name="email" placeholder="Email" required>
+                <br><br>
+                <label for="WebSite" class="a">WebSite:</label>
+                <input type="url" size="53" name="website" placeholder="WebSite">
+                <br><br>
+                <label for="Endereço" class="a">Endereço:</label>
+                <input type="text" size="53" name="endereço" placeholder="Endereço" required>
+                <br><br>
+                <label for="Bairro" class="a">Bairro:</label>
+                <input type="text" name="bairro" placeholder="Bairro" required>
+                <label for="Cidade">Cidade:</label>
+                <input type="text" size="18" name="cidade" placeholder="Cidade" required>
+                <br><br>
+                <label for="CEP" class="a">CEP</label>
+                <input type="number" name="cep" placeholder="CEP" required>
+                <label for="UF">UF:</label>
+                <select id="uf" name="UF" class="uf" required>
+                    <option value="Acre">AC</option>
+                    <option value="Alagoas">AL</option>
+                    <option value="Amapá">AP</option>
+                    <option value="Amazonas">AM</option>
+                    <option value="Bahia">BA</option>
+                    <option value="Ceará">CE</option>
+                    <option value="Distrito Federal">DF</option>
+                    <option value="Espírito Santo">ES</option>
+                    <option value="Goiás">GO</option>
+                    <option value="Maranhão">MA</option>
+                    <option value="Mato Grosso">MT</option>
+                    <option value="Mato Grosso do Sul">MS</option>
+                    <option value="Minas Gerais" selected>MG</option>
+                    <option value="Pará">PA</option>
+                    <option value="Paraíba">PB</option>
+                    <option value="Paraná">PR</option>
+                    <option value="Pernambucano">PE</option>
+                    <option value="Piauí">PI</option>
+                    <option value="Roraima">RR</option>
+                    <option value="Rondônia">RO</option>
+                    <option value="Rio de Janeiro">RJ</option>
+                    <option value="Rio Grande do Norte">RN</option>
+                    <option value="Rio Grande do Sul">RS</option>
+                    <option value="Santa Catarina">SC</option>
+                    <option value="São Paulo">SP</option>
+                    <option value="Tocantins">TO</option>
+                </select>
+                <br><br>
+                <label for="Telefone" class="a">Telefone:</label>
+                <input type="tel" placeholder="Telefone" required>
+                <label for="Fax">Fax:</label>
+                <input type="text" size="18" class="fax" name="fax" placeholder="Fax">
+                <br><br>
+                <label for="Data de Nascimento" class="a">Data de Nascimento:</label>
+                <input id="data" type="date" name="data de nascimento" placeholder="Dia/Mês/Ano" required>
+                <label for="Sexo">Sexo:</label>
+                <input type="radio" name="sexo" value="m" checked> M
+                <input type="radio" name="sexo" value="f"> F
+                <br><br>
+                <label for="Celular" class="a">Celular:</label>
+                <input type="tel"  name="celular" placeholder="Celular">
+                <label for="Estado Civil">Est. Civil:</label>
+                <select id="civil" name="Estado Civil">
+                    <option value="Solteiro"checked>Solteiro(a)</option>
+                    <option value="Casado">Casado(a)</option>
+                    <option value="União Estável">União Estável(a)</option>
+                    <option value="Divorciado">Divorciado(a)</option>
+                    <option value="Viúvo">Viúvo(a)</option>
+                </select>
+                <br><br>
+                <label for="Login" class="a">Login:</label>
+                <input type="text" name="login" placeholder="Login" required>
+                <label for="Senha">Senha:</label>
+                <input type="password" size="17" class="senha" name="Senha" placeholder="Senha" required>
+            </fieldset>
+    </body>
+    <footer>
+            <fieldset class="cor2">
+                <label for="Informações">Deseja receber informações sobre os seguintes assuntos abaixo:</label>
+                <br><br>
+                <input type="checkbox" name="Tecnologia" checked> Tecnologia
+                <input type="checkbox" name="Esportes"> Esportes
+                <input type="checkbox" name="Automóveis"> Automóveis
+                <input type="checkbox" name="Culinária"> Culinária
+                <input type="checkbox" name="Política"> Política
+                <input type="checkbox" name="Policial"> Policial
+                <input type="checkbox" name="Tempo"> Tempo
+                <br>
+                <input type="checkbox" name="Cultura"> Cultura
+                <input type="checkbox" name="Economia"> Economia
+                <input type="checkbox" name="Jogos"> Jogos
+                <input type="checkbox" name="Educação"> Educação
+                <input type="checkbox" name="Viagem"> Viagem
+                <input type="checkbox" name="Empregos"> Empregos
+                <input type="checkbox" name="Moda e Estilo"> Moda e Estilo
+                <br><br>
+                <input type="checkbox" name="Regras"> Li as regras de cadastro e autorizo a criação do usuário
+                <br><br>
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </footer>
+</body>
+</html>
